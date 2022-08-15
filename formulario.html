@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formularios</title>
-    </head>
+<head>
+   <title>Formularios</title>
 
-    <body>
-        <h1>Formularios</h1>
-        <form>
-            <label>Nombre:</label>
-            <input type="text"
-            maxlength="5">
+</head>
 
-        <label>Password:</label>
+<body>
+    <h1>Formulario 1</h1>
+    <form>
+        <label>Nombre:</label>
         <input type="text" 
-        maxlenght="5">
+        maxlength="5"
+        size="20">
+    <label>Password:</label>
+    <input type="password" 
+    maxlength="4"
+    size="4">
+    <input type="submit" value="Enviar">
+
+    <h1>Formulario 2</h1>
+    <form>
+        <ul>
+            <li>
+        <label>Opcion 1:</label>
+        <input type="checkbox">
+            </li>
         
-    
+        <br> <!--otra forma de poner el checkbox-->
+             <li>
+        <input type="checkbox" value="musica">
+        <label>Opcion 1</label>
+             </li>
+        
+        <li>
+        <input type="checkbox" value="series">
+        <label>Opcion 2</label>
+        </li>
+        </ul>
 
-        </form>
+        <label> Opcion A</label>
+        <input  type="radio" 
+                value="A" 
+                name="opciones">
+        <label> Opcion B</label>
+        <input  type="radio" 
+                value="B"
+                name="opciones">
 
-    </body>
+         
+
+
+    </form>
+    <hr>
+
+    <a href="index.html">
+            Volver a Index 
+    </a>        
+
+</body>
+
+
 </html>
