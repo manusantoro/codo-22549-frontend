@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase6</title>
+
+    <!--1 forma interna de usar css-->
+    <style>
+        /* todo lo que escriba aca debe ser css*/
+    p {color: green;
+        font-weight: bolder;
+
+        }
+    h1 {
+        color:red;
+        font-size: 40px;
+    }    
+        /*hasta aca*/
+
+        /*estructura
+        selector {
+            propiedad: valor
+        }
+         */
+
+         
+         /* ?una clase?
+         LoweCamelCase
+         */
+
+    .otraClaseConFondoVerde {
+        background-color:green
+    }
+
+    section {
+       background-color: red;
+    }
+
+    /* por ID*/
+    #btn {
+        background-color:aqua
+    }
+
+    .btn {
+        background-color:aqua
+    }
+
+
+    </style>
+
+
+    <!--3 forma externo-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <main>
+    <!-- 2 forma-->
+    <!--aplicar estilos 
+        en linea usando el atributo
+    style-->
+    <section class="sectionPrincipal">
+    <h1 style="color:red">Css</h1>
+    <h2 style="color:blue">Subtitulo</h2>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ratione. Laudantium at ex rerum distinctio in totam, fugit et error aperiam fugiat. Laudantium aliquam excepturi doloremque pariatur ducimus quibusdam perspiciatis?</p>
+    <h3>Soy subtitulo h3</h3>
+    </section>
+
+    <section class="otraClaseConFondoVerde">
+           <h1>Hola</h1>
+
+    </section>
+
+    <section>
+        <form action="alta.html">
+            <label for="nombre"> Nombre</label>
+            <input name="nombre" type="text" 
+            maxlength="50"
+            required>
+            <button id="btn">
+                Enviar
+            </button>
+
+            <button class="btn">
+                Enviar2
+            </button>
+
+            <button class="btn">
+                Enviar3
+            </button>
+        </form>
+
+        
+    </section>
+
+    </main>
+ 
+    
+</body>
+</html>
