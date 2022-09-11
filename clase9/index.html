@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selector hijo*/
+        p > strong {
+            color: red;
+        }
+
+        div > img {
+            width: 300px;
+        }
+
+        div.div1 p {
+            font-size: 20px;
+        }
+
+     /*hermanos ady tag + tag*/
+     h1 + p {
+        font-weight: bolder;
+     }
+
+    /*hermano general*/
+    h2 ~ p {
+        height: 30px;
+        background-color: aqua;
+    }
+
+     /*pseudoclases*/
+     a:visited {
+        color: brown;
+     }
+
+     a:active{
+        color: yellow;
+     }
+     h1:hover {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+     }
+     img:hover {
+        width: 310px;
+        border: 1px solid yellow;
+     }
+
+    /*hermanos + ady o hermano generales*/
+     h1 ~ p:hover {
+        font-size: 20px;
+     }
+     input:checked {
+        margin: 10px;
+     }
+
+
+     div.primerhijo {
+        padding-bottom: 25px;
+        text-align: center;
+     }
+     div.primerhijo p{
+        display: inline;
+       
+     }
+     /*especificidad, herencia*/
+     /*first child*/
+     div.primerhijo p:first-child {
+        color: blueviolet;
+        font-size: 20px;
+        font-weight: bolder;
+     }
+
+     /*last child*/
+     div.primerhijo p:last-child {
+        color: blue;
+        font-size: 20px;
+        font-weight: bolder;
+     }
+
+     /*nth*/
+     ol li:nth-child(even) {
+        color: rgb(238, 139, 10);
+     }
+
+     ul li:nth-child(n+5) {
+        color: blueviolet;
+     }
+
+
+     table {
+        border: 1px solid red;
+        border-spacing: 0px;
+        width: 500px;
+        padding: 5px;
+     }
+
+     table tr {
+        height: 30px;
+        padding: 5px;
+        text-align: center;
+     }
+
+     table tr:first-child {
+        background-color: aqua;
+        text-transform: uppercase;
+     }
+
+     /*tr  impares, pero a partir de la seguna fila tengan otro color*/
+     table tr:nth-child(2n+3) {
+        background-color: brown;
+        
+     }
+
+     table tr:nth-child(2n) {
+        background-color: rgb(209, 235, 16);
+     }
+
+     table tr:hover {
+        font-size: 1.2em;
+        font-weight: bolder;
+     }
+
+
+    </style>
+</head>
+
+<body>
+     <!--hijo de tag-->
+    <p>selector de hijos <strong>PADRE > HIJOS</strong>
+
+    </p>
+    <p>
+        Texto <strong>Texto strong</strong> sigue el texto
+    </p>
+
+    <div class="div1">
+        <img src="./scale.jpg">
+        <p>parrafo</p>
+        <p>parrafo</p>
+    </div>
+
+    <!--hermanos adyacentes-->
+    <div>
+        
+        <h1>Hermanos adyacentes</h1>
+        <p>
+            texto 1
+        </p>
+        <p>
+            texto 2
+        </p>
+        <p>
+            texto 3
+        </p>
+    </div>
+
+    <!--hermanos generales-->
+    <div>
+        
+        <h2>Hermanos generles</h2>
+        <p>
+            hermano 1 de h2 
+        </p>
+        <p>
+            hermano 2 de h2
+        </p>
+        
+    </div>
+    <!--selector de atributo en clase7 index.html-->
+    
+    <!--pseudoclases-->
+    <ul>
+        <li>
+            <a href="http://www.google.com.ar">Google</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com.ar">Facebook</a>
+        </li>
+        
+    </ul>
+    <input type="checkbox">
+
+    <!--first child-->
+    <div class="primerhijo">
+        <p>
+            P1
+        </p>
+        <p>
+            P2
+        </p>
+        <p>
+            P3
+        </p>
+        <p>
+            P4
+        </p>
+    </div>
+
+    <ol>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <ul>
+        <li>H1</li>
+        <li>H2</li>
+        <li>H3</li>
+        <li>H4</li>
+        <li>H5</li>
+        <li>H6</li>
+        <li>H7</li>
+        <li>H8</li>
+        <li>H9</li>
+        <li>H10</li>
+    </ul>
+
+
+    <table>
+        <tr>
+            <th>col 1</th>
+            <th>col 2</th>
+        </tr>
+        <tr>
+            <td>f1 col 1</td>
+            <td>fi col 2</td>
+        
+        <tr>
+            <td>f2 col 1</td>
+            <td>f2 col 2</td>
+        </tr>
+        <tr>
+            <td>f3 col 1</td>
+            <td>f3 col 2</td>
+        </tr>
+        <tr>
+            <td>f4 col 1</td>
+            <td>f4 col 2</td>
+        </tr>
+    </table>
+</body>
+</html>
