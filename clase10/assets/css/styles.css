@@ -122,7 +122,7 @@ section a:active {
 @media screen and (max-width:1000px) {
     section {
         flex-direction: column;
-        align-items: ;
+        
     }
     
 }
